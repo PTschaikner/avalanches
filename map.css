@@ -1,0 +1,8 @@
+#leaflet-map {
+    width: 1400px;
+    height: 600px;
+  }
+
+  .leaflet-container {
+    cursor: auto !important;
+  }
