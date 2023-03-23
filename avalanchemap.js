@@ -37,13 +37,13 @@ function initMap() {
     return new L.TileLayer(tileSourceURL, tileSourceOptions);
   }
 
-function loadCSVData() {
-  d3.csv("avalanche_data.csv", function(data) {
-    data.forEach(function (avalanche) {
-      addMarker(avalanche); // Add a delay based on the order of the avalanche in the CSV file
-    });
-  });
-}
+  function loadCSVData() {
+    d3.csv("avalanche_data.csv").then(function(data) {
+        data.forEach(function (avalanche) {
+          addMarker(avalanche); 
+        });
+      });
+    }
 
   function addMarker(avalanche) {
   var delay = avalanche.index * 10
@@ -87,8 +87,8 @@ function loadCSVData() {
       
     // Delay the transition of each circle by the specified amount
     marker.transition()
-      .delay(delay + (i * 100))
-      .duration(1000)
+      .delay(delay + (i*20))
+      .duration(700)
       .attr('r', radius)
       .style('fill-opacity', opacity[i])
       .style('opacity', opacity[i]);
