@@ -1,8 +1,124 @@
-#leaflet-map {
-    width: 1400px;
-    height: 600px;
-  }
+html {
+  font-size: 12px;
+}
 
-  .leaflet-container {
-    cursor: auto !important;
-  }
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5%;
+  max-width: 1400px;
+}
+
+article {
+  padding: 5rem 0rem;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+
+h1,
+h2,
+h3 {
+  font-family: 'Merriweather', serif;
+  color: #1d3d63;
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+}
+
+section > p {
+  width: 55%;
+}
+
+figure {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 55%;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin: 0 0 3em 0;
+}
+
+figcaption {
+  float: right;
+  clear: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  vertical-align: baseline;
+  position: relative;
+  max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+  margin-right: 24%;
+}
+
+.fullwidth {
+  max-width: 90%;
+  clear:both;
+}
+
+
+#histogram {
+
+  height: 150px;
+}
+
+#leaflet-map {
+  height: 400px;
+}
+
+.leaflet-container {
+  cursor: auto !important;
+}
+
+.month-label {
+  fill: gray;
+  opacity: 0.3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.icon {
+  width: 70px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
@@ -7,14 +8,62 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="interactivemap.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 
-
-  <title>Plotting CSV Map Marker Data</title>
+  <title>Death in the alps - Analysis of Avalanche incidents</title>
 </head>
-<body onload="showMap()">
-  <div id="leaflet-map"></div>
-  
 
+<body onload="showMap()">
+
+  <article>
+    <h1>Death in the Alps - Avalanche Accidents over time</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur</p>
+    <section>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+
+      <figure class="fullwidth">
+      <div id="histogram"></div>
+      <div id="leaflet-map"></div>
+      <div id="checkboxes">
+        <label>
+          <img src="assets/EAWS-1.png" alt="Checkmark icon" class="icon">Low<input type="checkbox"
+              name="danger-levels" value="1" checked>
+        </label>
+        <label>
+          <img src="assets/EAWS-2.png" alt="Checkmark icon" class="icon">Moderate<input type="checkbox"
+              name="danger-levels" value="2" checked>
+        </label>
+        <label>
+          <img src="assets/EAWS-3.png" alt="Checkmark icon" class="icon">Considerable<input type="checkbox"
+              name="danger-levels" value="3" checked>
+        </label>
+        <label>
+          <img src="assets/EAWS-4.png" alt="Checkmark icon" class="icon">High<input type="checkbox"
+              name="danger-levels" value="4" checked>
+        </label>
+        <label>
+          <img src="assets/EAWS-4.png" alt="Checkmark icon" class="icon">Very high<input type="checkbox"
+              name="danger-levels" value="5" checked>
+        </label>
+        <label>
+          <img src="assets/EAWS-0.png" alt="Checkmark icon" class="icon">Not assigned<input type="checkbox"
+              name="danger-levels" value="0" checked>
+        </label>
+      </div>
+    </figure>  
+
+    </section>
+  </article>
 </body>
+
 </html>
